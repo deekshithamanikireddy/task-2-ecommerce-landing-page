@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEasy - E-Commerce Landing Page</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f7f7f7;
+        color: #333;
+      }
+
+      /* Navbar */
+      nav {
+        background: #111;
+        color: white;
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      nav h2 {
+        color: #ff9800;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+
+      nav ul li {
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      nav ul li:hover {
+        color: #ff9800;
+      }
+
+      .auth button {
+        padding: 8px 15px;
+        border: none;
+        margin-left: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .login {
+        background: white;
+        color: black;
+      }
+
+      .signup {
+        background: #ff9800;
+        color: white;
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 8%;
+        flex-wrap: wrap;
+        background: linear-gradient(to right, #fff3e0, #ffe0b2);
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .hero-text h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      .hero-text span {
+        color: #ff9800;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+
+      .hero-text button {
+        padding: 14px 28px;
+        border: none;
+        border-radius: 8px;
+        background: #ff9800;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .hero img {
+        width: 450px;
+        max-width: 100%;
+      }
+
+      /* Products */
+      .products {
+        padding: 60px 8%;
+        text-align: center;
+      }
+
+      .products h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card h3 {
+        margin: 15px 0 10px;
+      }
+
+      .price {
+        color: #ff9800;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      /* Footer */
+      footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          text-align: center;
+          gap: 30px;
+        }
+
+        .hero-text h1 {
+          font-size: 35px;
+        }
+
+        nav {
+          justify-content: center;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h2>ShopEasy</h2>
+
+      <ul>
+        <li>Home</li>
+        <li>Electronics</li>
+        <li>Fashion</li>
+        <li>Offers</li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="auth">
+        <button class="login">Login</button>
+        <button class="signup">Sign Up</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Shop <span>Smart</span>, Live Better</h1>
+        <p>
+          Discover amazing products at unbeatable prices. Upgrade your lifestyle
+          with the latest fashion, gadgets, and exclusive offers.
+        </p>
+        <button>Shop Now</button>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=900"
+        alt="Shopping"
+      />
+    </section>
+
+    <section class="products">
+      <h2>Featured Products</h2>
+
+      <div class="product-grid">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+            alt=""
+          />
+          <h3>Stylish Shoes</h3>
+          <p class="price">₹1,999</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+            alt=""
+          />
+          <h3>Smart Phone</h3>
+          <p class="price">₹19,999</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+            alt=""
+          />
+          <h3>Fashion Wear</h3>
+          <p class="price">₹999</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+            alt=""
+          />
+          <h3>Headphones</h3>
+          <p class="price">₹2,499</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 ShopEasy | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
